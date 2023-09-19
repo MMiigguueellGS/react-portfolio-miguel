@@ -28,7 +28,7 @@ function App() {
             <div className="user-info__general">
               <div className="user-info__container-imagen">
               <img src="/img/foto-perfil.png" alt="Foto perfil Usuario" className="user-info__image"/>
-            {/* <!-- aqui ira el seudoelemento after(ultimo Hijo de contenedor)  fondo de la imagen --> */}
+            {/* <!-- aqui iira el seudoelemento after(ultimo Hijo de contenedor)  fondo de la imagen --> */}
               </div>
 
               <h2 className="user-info__name">Miguel Guevara</h2>
