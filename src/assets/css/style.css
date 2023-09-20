@@ -67,10 +67,12 @@ body {
 
 /* BARRA LATERAL VERDE*/
 .layout__aside {
+  /* position: relative; */
   grid-area: aside;
   border-radius: 4rem 0 0 4rem;
   overflow: auto;
   overflow-x: hidden;
+  opacity: 1;
 }
 
 .aside__user-info {
@@ -244,28 +246,30 @@ body {
 }
 /* MENU NAVEGACION LATERAL*/
 
-.layout__menu {
+/* .layout__menu {
   display: block;
   position: absolute;
   top: 0;
   right: -110px;
   min-width: 11rem;
   background-color: var(--color-transparent);
-}
+} */
 
 .menu__list {
-  position: relative;
+  position: absolute;
+  right: -7%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 60%;
+  width: 5%;
   min-height: 32rem;
   padding: 2rem 0;
   margin-left: 2rem;
   background-color: var(--color-principal);
   box-shadow: 0 0 3rem -0.5rem rgba(0, 0, 0, 0.15);
   border-radius: 6rem;
+  opacity: 1;
 }
 
 .menu__option {
