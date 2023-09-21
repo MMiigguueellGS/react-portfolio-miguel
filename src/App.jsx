@@ -23,7 +23,7 @@ function App() {
           <div className="user-info__general">
             <div className="user-info__container-imagen">
               <img
-                src="/img/foto-perfil-1.png"
+                src="/img/foto-perfil-4.png"
                 alt="Foto perfil Usuario"
                 className="user-info__image"
               />
