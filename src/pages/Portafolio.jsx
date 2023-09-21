@@ -6,7 +6,7 @@ const Portafolio = () => {
     <section className="content__page content__portfolio">
       {/* <!-- ESTE CONTENIDO CAMBIA EN CADA SITIO web --> */}
       <header className="portfolio__header">
-        <h1 className="portfolio__title">Portafolio</h1>
+        <h1 className="portfolio__title">Porta<span className="title__color">folio</span></h1>
       </header>
 
 

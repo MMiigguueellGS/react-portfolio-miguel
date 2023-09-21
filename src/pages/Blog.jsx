@@ -6,7 +6,7 @@ const Blog = () => {
     <section className="content__page content__blog">
       {/* <!-- ESTE CONTENIDO CAMBIA EN CADA SITIO web --> */}
       <header className="blog__header">
-        <h1 className="blog__title">Blog</h1>
+        <h1 className="blog__title">Blog - Recursos <span className="title__color">utiles</span></h1>
       </header>
       <section className="blog__articles">
         <article className="articles__article animate-flip-down animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal animate-fill-both">

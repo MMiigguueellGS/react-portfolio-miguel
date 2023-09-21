@@ -78,6 +78,7 @@ body {
 .aside__user-info {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
 
@@ -377,7 +378,7 @@ body {
 }
 
 .personal_info__description {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   text-align: justify;
 }
@@ -428,7 +429,7 @@ body {
 .form-header__title {
   font-size: 2rem;
 }
-.xxx{
+.modifier{
   right: 0;
   width: 100%;
   text-align: right;
@@ -672,13 +673,17 @@ body {
   height: 100%;
   display: flex;
   margin-bottom: 1.5rem;
+
   flex-direction: row;
-  justify-content: space-between;
+  gap: 1rem;
   flex-wrap: wrap;
+  align-content: center;
+    justify-content: center;
 }
 
 .extra__info {
-  flex-basis: 30%;
+  flex-basis: 20%;
+  height: 14rem;
   padding: 2.5rem 1rem;
   border: 2px solid var(--color-border-reviews);
   text-align: center;
@@ -689,22 +694,15 @@ body {
   transform: translateY(-0.5rem);
 }
 .extra__icon {
-  font-size: 3.3rem;
+  font-size: 3rem;
   color: var(--color-secundary);
   margin-bottom: 1rem;
 }
 .extra__subtitle {
-  font-size: 1.5rem;
-  margin: 1.5rem;
+  font-size: 1.4rem;
+  margin: 1rem;
 }
-.extra__quantity {
-  display: block;
-  margin: 1.5rem 0;
-  margin-bottom: 0;
-  font-size: 3.6rem;
-  line-height: 5rem;
-  color: var(--color-subtitle);
-}
+
 
 /* CURRICULUM*/
 .resume__container {
