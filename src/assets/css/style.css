@@ -374,13 +374,16 @@ body {
 }
 
 .personal-info__bio {
-  flex-basis: 100%;/* estubo en 56% porque hubo otra seccion que usaba el resto*/
+  flex-basis: 100% ;/* estubo en 56% porque hubo otra seccion que usaba el resto*/
+  margin-right: 6rem;
+  margin-left: 3rem;
 }
 
 .personal_info__description {
   font-size: 1.5rem;
   line-height: 2.5rem;
-  text-align: justify;
+  text-align: center;
+  
 }
 
 .personal-info__data {
@@ -470,10 +473,11 @@ body {
 }
 
 .services__service {
-  flex-basis: calc(50% - 3rem);
+  flex-basis: calc(50% - 3em);
   margin-right: 3rem;
   margin-bottom: 2.5rem;
 }
+
 
 .service_real-icon {
   color: var(--color-secundary);
@@ -483,11 +487,15 @@ body {
 .service__title {
   font-size: 1.8rem;
   margin: 0.5rem;
+  
 }
 
 .service__description {
+  margin-top: 3rem;
+  margin-left: 2rem;
   font-size: 1.5rem;
-  text-align: justify;
+  text-align: right;
+
 }
 
 /* REVIEWS*/
