@@ -9,7 +9,7 @@ const Blog = () => {
         <h1 className="blog__title">Blog</h1>
       </header>
       <section className="blog__articles">
-        <article className="articles__article">
+        <article className="articles__article animate-flip-down animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal animate-fill-both">
 
           <div className="article__top">
             <div className="article__category">Desarrollo</div>
@@ -33,7 +33,7 @@ const Blog = () => {
           </div>
 
         </article>
-        <article className="articles__article">
+        <article className="articles__article animate-flip-down animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal animate-fill-both">
 
           <div className="article__top">
             <div className="article__category">Desarrollo</div>
@@ -57,7 +57,7 @@ const Blog = () => {
           </div>
 
         </article>
-        <article className="articles__article">
+        <article className="articles__article animate-flip-down animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal animate-fill-both">
 
           <div className="article__top">
             <div className="article__category">Desarrollo</div>
@@ -81,7 +81,7 @@ const Blog = () => {
           </div>
 
         </article>
-        <article className="articles__article">
+        <article className="articles__article animate-flip-down animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal animate-fill-both">
 
           <div className="article__top">
             <div className="article__category">Desarrollo</div>

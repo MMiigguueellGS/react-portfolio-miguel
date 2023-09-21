@@ -12,7 +12,7 @@ const Portafolio = () => {
 
       <section className="portfolio__gallery">
 
-        <figure className="gallery__item">
+        <figure className="gallery__item animate-flip-down animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal animate-fill-both">
           <div className="gallery_container-image">
             <a className="gallery__link" href="https://ma-react-e01.netlify.app/" target="_blank" >
               <img className="gallery__image" src="/img/fortuneCookies.png" alt=""/>
@@ -23,7 +23,7 @@ const Portafolio = () => {
           <span className="gallery__category">App con frases motivadoras</span>
         </figure>
 
-        <figure className="gallery__item">
+        <figure className="gallery__item animate-flip-down animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal animate-fill-both">
           <div className="gallery_container-image">
             <a className="gallery__link" href="https://ma-e02-weather-app.netlify.app/" target="_blank">
               <img className="gallery__image" src="/img/weather.png" alt=""/>
@@ -34,7 +34,7 @@ const Portafolio = () => {
           <span className="gallery__category">Conoce el clima de tu ubicacion</span>
         </figure>
 
-        <figure className="gallery__item">
+        <figure className="gallery__item animate-flip-down animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal animate-fill-both">
           <div className="gallery_container-image">
             <a className="gallery__link" href="https://mg-e-commerce-ac.netlify.app/" target="_blank">
               <img className="gallery__image" src="/img/ecommerce.png" alt=""/>
@@ -45,7 +45,7 @@ const Portafolio = () => {
           <span className="gallery__category">e-commerce</span>
         </figure>
 
-        <figure className="gallery__item">
+        <figure className="gallery__item animate-flip-down animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal animate-fill-both">
           <div className="gallery_container-image">
             <a className="gallery__link" href="https://poquedex-mdm-2023.netlify.app/pokedex/59" target="_blank">
               <img className="gallery__image" src="/img/pokedx.png" alt=""/>
@@ -57,7 +57,7 @@ const Portafolio = () => {
           <span className="gallery__category">Encuentra tu pokemon favorito</span>
         </figure>
 
-        <figure className="gallery__item">
+        <figure className="gallery__item animate-flip-down animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal animate-fill-both">
           <div className="gallery_container-image">
             <a className="gallery__link" href="https://ma-react3-rick-and-morty.netlify.app/" target="_blank">
               <img className="gallery__image" src="/img/rickMorty.png" alt=""/>
@@ -68,7 +68,7 @@ const Portafolio = () => {
           <span className="gallery__category">Busca tu personaje</span>
         </figure>
 
-        <figure className="gallery__item">
+        <figure className="gallery__item animate-flip-down animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal animate-fill-both">
           <div className="gallery_container-image">
             <a className="gallery__link" href="https://ma-userforge-e04.netlify.app/" target="_blank">
               <img className="gallery__image" src="/img/usuarios.png" alt=""/>

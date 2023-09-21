@@ -7,11 +7,11 @@ const SobreMi = () => {
       <section className="content__page content__about">
         {/* <!-- ESTE CONTENIDO CAMBIA EN CADA SITIO web --> */}
         <header className="about__header">
-          <h1 className="about__title">Sobre <span className="title__color">Mi</span></h1>
+          <h1 className="about__title animate-fade-left animate-once animate-duration-500 animate-delay-200 animate-ease-in-out animate-normal animate-fill-both">Sobre <span className="title__color">Mi</span></h1>
         </header>
         <section className="about__personal-info">
           <article className="personal-info__bio">
-            <p className="personal_info__description">
+            <p className="personal_info__description animate-flip-down animate-once animate-duration-500 animate-delay-300 animate-ease-in-out animate-normal animate-fill-both">
               ¡Hola! Soy <span className="title__color">miguel </span>Soy un apasionado del desarrollo web, transformando
               ideas en soluciones efectivas. Utilizo JavaScript, HTML, CSS y React para crear experiencias técnicas
               robustas y atractivas.
@@ -21,6 +21,46 @@ const SobreMi = () => {
 
         </section>
 
+        <section className="about__services">
+          <header className="services__header xxx">
+            <h2 className="services__title">
+              Lo que <span className="title__color">hago</span></h2>
+          </header>
+
+          <div className="services__container">
+            <article className="services__service">
+              <div className="service_icon">
+                <i className="service_real-icon fa-solid fa-code"></i>
+              </div>
+
+              <div className="serice__content">
+                <h3 className="service__title">Programacion</h3>
+                <p className="service__description animate-flip-down animate-once animate-duration-500 animate-delay-350 animate-ease-in-out animate-normal animate-fill-both">me sumerjo en el mundo del código, donde transformo ideas en realidad.
+                  Utilizo una variedad de lenguajes de programación, como JavaScript, HTML, CSS, y react, para crear
+                  soluciones técnicas efectivas y robustas. </p>
+              </div>
+            </article>
+
+            <article className="services__service">
+              <div className="service_icon">
+                <i className="service_real-icon fa-solid fa-chalkboard-user"></i>
+              </div>
+
+              <div className="serice__content">
+                <h3 className="service__title">Formacion</h3>
+                <p className="service__description animate-flip-down animate-once animate-duration-500 animate-delay-450 animate-ease-in-out animate-normal animate-fill-both">Siempre estoy en busca de oportunidades para mejorar mis habilidades y
+                  mantenerme actualizado en un campo en constante evolución. Participar en cursos, conferencias y
+                  proyectos de aprendizaje es fundamental para mantenerme a la vanguardia de las últimas tendencias y
+                  tecnologías en desarrollo web.</p>
+              </div>
+            </article>
+
+
+
+
+          </div>
+
+        </section>
         <section className="about__services">
           <header className="services__header">
             <h2 className="services__title">
@@ -35,7 +75,7 @@ const SobreMi = () => {
 
               <div className="serice__content">
                 <h3 className="service__title">Programacion</h3>
-                <p className="service__description">me sumerjo en el mundo del código, donde transformo ideas en realidad.
+                <p className="service__description animate-flip-down animate-once animate-duration-500 animate-delay-350 animate-ease-in-out animate-normal animate-fill-both">me sumerjo en el mundo del código, donde transformo ideas en realidad.
                   Utilizo una variedad de lenguajes de programación, como JavaScript, HTML, CSS, y react, para crear
                   soluciones técnicas efectivas y robustas. </p>
               </div>
@@ -48,7 +88,7 @@ const SobreMi = () => {
 
               <div className="serice__content">
                 <h3 className="service__title">Formacion</h3>
-                <p className="service__description">Siempre estoy en busca de oportunidades para mejorar mis habilidades y
+                <p className="service__description animate-flip-down animate-once animate-duration-500 animate-delay-450 animate-ease-in-out animate-normal animate-fill-both">Siempre estoy en busca de oportunidades para mejorar mis habilidades y
                   mantenerme actualizado en un campo en constante evolución. Participar en cursos, conferencias y
                   proyectos de aprendizaje es fundamental para mantenerme a la vanguardia de las últimas tendencias y
                   tecnologías en desarrollo web.</p>
@@ -61,6 +101,47 @@ const SobreMi = () => {
           </div>
 
         </section>
+        <section className="about__services">
+          <header className="services__header">
+            <h2 className="services__title">
+              Lo que <span className="title__color">hago</span></h2>
+          </header>
+
+          <div className="services__container">
+            <article className="services__service">
+              <div className="service_icon">
+                <i className="service_real-icon fa-solid fa-code"></i>
+              </div>
+
+              <div className="serice__content">
+                <h3 className="service__title">Programacion</h3>
+                <p className="service__description animate-flip-down animate-once animate-duration-500 animate-delay-350 animate-ease-in-out animate-normal animate-fill-both">me sumerjo en el mundo del código, donde transformo ideas en realidad.
+                  Utilizo una variedad de lenguajes de programación, como JavaScript, HTML, CSS, y react, para crear
+                  soluciones técnicas efectivas y robustas. </p>
+              </div>
+            </article>
+
+            <article className="services__service">
+              <div className="service_icon">
+                <i className="service_real-icon fa-solid fa-chalkboard-user"></i>
+              </div>
+
+              <div className="serice__content">
+                <h3 className="service__title">Formacion</h3>
+                <p className="service__description animate-flip-down animate-once animate-duration-500 animate-delay-450 animate-ease-in-out animate-normal animate-fill-both">Siempre estoy en busca de oportunidades para mejorar mis habilidades y
+                  mantenerme actualizado en un campo en constante evolución. Participar en cursos, conferencias y
+                  proyectos de aprendizaje es fundamental para mantenerme a la vanguardia de las últimas tendencias y
+                  tecnologías en desarrollo web.</p>
+              </div>
+            </article>
+
+
+
+
+          </div>
+
+        </section>
+
 
         <section className="about__extra">
 
@@ -90,6 +171,7 @@ const SobreMi = () => {
           </div>
 
         </section>
+        
 
       </section>
     </main>

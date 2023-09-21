@@ -428,6 +428,12 @@ body {
 .form-header__title {
   font-size: 2rem;
 }
+.xxx{
+  right: 0;
+  width: 100%;
+  text-align: right;
+  
+}
 
 .services__title::after,
 .reviews__title::after,
