@@ -35,7 +35,7 @@ function App() {
           <div className="user-info__links">
             <ul className="links__social">
               <li className="social__option">
-                <a href="#" className="social__link">
+                <a href="https://www.linkedin.com/in/miguel-guevara-a16540158/" className="social__link" target="_blank">
                   <i className="social__icon fa-brands fa-linkedin"></i>
                 </a>
               </li>
@@ -53,7 +53,7 @@ function App() {
 
           {/* <!-- boton del cv --> */}
           <div className="user-info__buttons">
-            <a href="#" className="user-info__btn">
+            <a href="https://drive.google.com/file/d/1mu81rRgCTiYTam-j6O3718cBuE3_Ahhg/view?usp=drive_link" className="user-info__btn" target="_blank">
               Descargar CV
             </a>
           </div>
