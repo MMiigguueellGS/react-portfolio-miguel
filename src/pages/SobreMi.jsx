@@ -14,10 +14,7 @@ const SobreMi = () => {
           <section className="about__personal-info">
             <article className="personal-info__bio">
               <p className="personal_info__description animate-flip-down animate-once animate-duration-500 animate-delay-300 animate-ease-in-out animate-normal animate-fill-both">
-                ¡Hola! Soy <span className="title__color">miguel </span>Soy un
-                apasionado del desarrollo web, transformando ideas en soluciones
-                efectivas. Utilizo JavaScript, HTML, CSS y React para crear
-                experiencias técnicas robustas y atractivas.
+                ¡Hola! Soy <span className="title__color">miguel </span> un entusiasta del desarrollo web. Me gusta crear proyectos con tecnologias como javaScript, react js y node js, que no solo sean visualmente atractivos, sino que también ofrezcan una funcionalidad interesante y útil .
               </p>
             </article>
           </section>
