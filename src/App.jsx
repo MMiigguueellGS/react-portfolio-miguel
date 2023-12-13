@@ -53,7 +53,7 @@ function App() {
 
           {/* <!-- boton del cv --> */}
           <div className="user-info__buttons">
-            <a href="https://drive.google.com/file/d/1oIYqRqGy1m8lrys2lzMpcZ0tJiqLTKqI/view?usp=drive_link" className="user-info__btn" target="_blank">
+            <a href="https://drive.google.com/file/d/1P5bvugt0Kkkkyfnp3EFonDwtUw1a04IA/view?usp=drive_link" className="user-info__btn" target="_blank">
               Descargar CV
             </a>
           </div>
