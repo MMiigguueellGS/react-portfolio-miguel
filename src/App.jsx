@@ -6,14 +6,28 @@ import "./assets/css/style.css";
 import "./assets/css/responsive.css";
 import Home from "./pages/Home";
 import { Link, Route, Routes } from "react-router-dom";
+import { Link as ScrollLink } from 'react-scroll';
 import SobreMi from "./pages/SobreMi";
 import Page404 from "./pages/Page404";
 import Portafolio from "./pages/Portafolio";
 import Blog from "./pages/Blog";
 import Contacto from "./pages/Contacto";
 import "./assets/css/loader.css";
+import { useState } from "react";
+import { useEffect } from "react";
 
 function App() {
+  const [isActive, setIsActive] = useState('home')
+  const isActiveMenu = (id)=>{
+    setIsActive(id)
+    localStorage.setItem("isActive",id)
+  }
+useEffect(() => {
+  const isActive = localStorage.getItem("isActive")
+  setIsActive(isActive)
+
+}, [])
+
   return (
     <div className="layout">
       {/* <!-- Barra lateral (info Usuario) --> */}
@@ -36,7 +50,8 @@ function App() {
             <ul className="links__social">
               <li className="social__option">
                 <a href="https://www.linkedin.com/in/miguel-guevara-a16540158/" className="social__link" target="_blank">
-                  <i className="social__icon fa-brands fa-linkedin"></i>
+                  <i className="social__icon bx bxl-linkedin"></i>
+                 
                 </a>
               </li>
               <li className="social__option">
@@ -45,7 +60,8 @@ function App() {
                   target="_blank"
                   className="social__link"
                 >
-                  <i className="social__icon fa-brands fa-github"></i>
+                  <i className="social__icon bx bxl-github "></i>
+
                 </a>
               </li>
             </ul>
@@ -67,40 +83,48 @@ function App() {
 
       {/* <!-- Menu de navegacion --> */}
       <ul className="menu__list">
-          <li className="menu__option">
-            <Link to="/" className="menu__link ">
-              <i className="menu__icon fa-solid fa-house "></i>
+          <li className="menu__option"  onClick={()=>isActiveMenu('home')}>
+            <Link   to="/" className="menu__link ">
+              <i className= {` ${isActive==='home'? "active":""}  menu__icon fa-solid fa-house`} ></i>
               <span className="menu__overlay">Home</span>
             </Link>
           </li>
-          <li className="menu__option">
-            <Link to="/sobreMi" className="menu__link">
-              <i className="menu__icon fa-solid fa-user "></i>
+          <li className="menu__option" onClick={()=>isActiveMenu('sobreMi')}>
+            <Link to="/sobreMi" smooth={true} duration={500} className="menu__link">
+              <i className=  {` ${isActive==='sobreMi'? "active":""} menu__icon fa-solid fa-user `}></i>
               <span className="menu__overlay">Sobre mi</span>
             </Link>
           </li>
 
-          <li className="menu__option">
-            <Link to="/portafolio" className="menu__link">
-              <i className="menu__icon fa-solid fa-briefcase "></i>
+          <li className="menu__option" onClick={()=>isActiveMenu('portafolio')}>
+            <Link to="/portafolio"  smooth={true} duration={500}  className="menu__link">
+              <i className={` ${isActive==='portafolio'? "active":""} menu__icon fa-solid fa-briefcase `}></i>
               <span className="menu__overlay">Portafolio</span>
             </Link>
           </li>
-          <li className="menu__option">
-            <Link to="/blog" className="menu__link">
-              <i className="menu__icon fa-solid fa-book "></i>
+          <li className="menu__option" onClick={()=>isActiveMenu('blog')}>
+            <Link to="/blog" smooth={true} duration={500} className="menu__link">
+              <i className={` ${isActive==='blog'? "active":""} menu__icon fa-solid fa-book `}></i>
               <span className="menu__overlay">Blog</span>
             </Link>
           </li>
-          <li className="menu__option">
-            <Link to="/contacto" className="menu__link">
-              <i className="menu__icon fa-solid fa-envelope "></i>
+          <li className="menu__option" onClick={()=>isActiveMenu('contacto')}>
+            <Link to="/contacto" smooth={true} duration={500} className="menu__link">
+              <i className={` ${isActive==='contacto'? "active":""} menu__icon fa-solid fa-envelope `}></i>
               <span className="menu__overlay">Contacto</span>
             </Link>
           </li>
         </ul>
 
-      <Routes>
+
+
+        {/* <Home /> */}
+        {/* <SobreMi />
+        <Portafolio />
+        <Blog /> */}
+        {/* <Contacto /> */}
+ 
+     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobreMi" element={<SobreMi />} />
         <Route path="/portafolio" element={<Portafolio />} />
@@ -108,6 +132,7 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
+   
     </div>
   );
 }
